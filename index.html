@@ -4,12 +4,33 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages. Yes I am.</p>
+<style>
+#outerdiv
+{
+   width:446px;
+   height:246px;
+   overflow:hidden;
+   position:relative;
+}
+
+#inneriframe
+{
+   position:absolute;
+   top:-412px;
+   left:-318px;
+   width:1280px;
+   height:1200px;
+}
+</style>
 <!-- <iframe src="https://mitsloan.service-now.com/" height="500" width="600" title="ServiceNow"></iframe> -->
 <!-- <iframe src="https://mitsloan.hosted.panopto.com/Panopto/Pages/Admin/RemoteRecorders/List.aspx#maxResults=250" height="500" width="600" title="Panopto"></iframe> -->
 <!-- <iframe src="https://mitsloan.hosted.panopto.com/Panopto/Pages/Admin/RemoteRecorders/List.aspx#maxResults=250" title="Panopto" height="1600" width="1000"></iframe> -->
-<script>
+<div id="outerdiv">
+    <iframe src="https://mitsloan.hosted.panopto.com/Panopto/Pages/Admin/RemoteRecorders/List.aspx#maxResults=250" id="inneriframe" scrolling="no"></iframe>
+</div>
+<!-- <script>
 $('#content').load('https://mitsloan.hosted.panopto.com/Panopto/Pages/Admin/RemoteRecorders/List.aspx#maxResults=250');
-</script>
+</script> -->
 </body>
 </html>
 
